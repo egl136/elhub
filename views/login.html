@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/root.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title></title>
+</head>
+<body>
+    <div>
+    <div id="polygon-shape">
+        <img src="/imgs/background.jpg" alt="bg">
+    </div>
+    <div id="black-square">
+        
+    </div>
+    <div id="blue-square">
+        
+    </div>
+    <div id="formulario">
+        <div class="logo">
+            <img src="/imgs/logoHub.png" alt="Logo Hub"/>
+        </div>
+        <p style="font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    color: white;
+    font-size: 40px; text-align: center;">INICIA SESIÓN</p>
+        <label class="label-in">Email</label>
+        <input class="in-put" type="" id="usuinput"><br><br>
+        <label class="label-in">Contraseña</label>
+        <input class="in-put" type="password" id="pasinput"><br><br>
+        <span id="form-error" style="color:red;"></span><br>
+        <span id="serv-error" style="color:yellow;"></span><br>
+        <span id="succ-msg" style="color:green;"></span><br>
+        <button id="sub-but" onclick="login();alert('pushado')">Iniciar Sesión</button>
+    </div>
+    <div id="go-reg-div">
+        <p>¿No te has registrado? <button id="go-reg-but" onclick="window.location.replace('/register')">Registrate</button></p>
+    </div>
+</div>
+    
+</body>
+</html>

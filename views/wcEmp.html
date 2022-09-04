@@ -1,0 +1,22 @@
+<?php
+if(empty($_SESSION['id']) || !isset($_SESSION['id'])){
+	echo '<script type="text/javascript">window.location.replace("?")</script>';
+}	
+$nombre = $_SESSION['empresa'];
+?>
+
+<div style="background-image: url('html/imgs/Fondo_usuario_empresa.png');height: 100%;width: 100%;">	
+	<div class="texto-bienvenida" >
+        <h1 >BIENVENIDO</h1>
+        <hr />
+        <h2 ><?php echo $nombre;?></h2>
+    </div>
+    <div class="logo" >
+        <img src="html/imgs/logoHub.png" alt="Logo HUB" >
+    </div>
+    <div class="boton1">
+        <a href="?p=5" >CERRAR SESION</a>
+    </div>
+
+    <hr class="decoracion">
+</div>

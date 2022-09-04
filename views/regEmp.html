@@ -1,0 +1,72 @@
+<script type="text/javascript">
+    retrieveCountries().then(
+        (data) => {
+            getData(data);
+            paisesDropDown(countries);          
+        }
+    );
+</script>
+<div class="logo-reg">
+        <img src="html/imgs/logoHub.png" alt="Logo Hub"/>
+    </div>
+    <div id="regEmp-div">
+        <div id="regEmp-form">
+            <p style="font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    color: white;
+    font-size: 25px; text-align: center;margin-top: 0;padding-top: 0%;">REGISTRATE</p><br>
+            <label class="label-in label-in-r label-in-r2">Nombre(s) del representante</label>
+            <input type="" class="in-put in-put-r in-put-r2" id="nombre"><br>
+            <label class="label-in label-in-r label-in-r2">Apellidos del representante</label>
+            <input type="" class="in-put in-put-r in-put-r2" id="apellidos"><br>
+            <label class="label-in label-in-r label-in-r2">Razón Social</label>
+            <input type="" class="in-put in-put-r in-put-r2" id="razon"><br>
+            <label class="label-in label-in-r label-in-r2">RFC</label>
+            <input type="" class="in-put in-put-r in-put-r2" id="rfc"><br>
+            <label class="label-in label-in-r label-in-r2">País</label>
+            <select id="countries" onchange="" class="in-put in-put-r in-put-r2">
+                <option value="" disabled selected hidden>SELECCIONA PAÍS</option>
+            </select><br>
+            <label class="label-in label-in-r label-in-r2">Ciudad</label>
+            <select id="cities" class="in-put in-put-r in-put-r2">
+            </select><br>
+            <label class="label-in label-in-r label-in-r2">Teléfono</label>
+            <input type="" class="in-put in-put-r in-put-r2" id="telefono"><br>
+            <label class="label-in label-in-r label-in-r2">Email</label>
+            <input type="email" class="in-put in-put-r in-put-r2" id="correo"><br>
+            <label class="label-in label-in-r label-in-r2">Contraseña</label>
+            <input type="password" class="in-put in-put-r in-put-r2" id="passwd"><br>
+            <button id="sub-but" onclick="register(1)" style="font-size: 14px;">Registrar mi empresa    </button><br>
+            <span id="form-error" style="color:red;"></span><br>
+            <span id="serv-error" style="color:yellow;"></span><br>
+            <span id="succ-msg" style="color:green;"></span>
+        </div>
+    </div>
+    
+        <div id="registrado-div" >
+            <p style="float: right;text-align: center;font-family: 'Poppins';
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 12px;
+        color: white;">¿Ya estás registrado?</p>
+        </div>
+        <div id="is-div" >
+            <button style="background-color: transparent;
+        border: none;
+        
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 12px;
+        color: white;" onclick="window.location.replace('?')">Inicia sesión</button>
+        </div>
+    <div class="ovalo" id="above-ovalo">
+        
+    </div>
+    <div class="ovalo" id="mid-ovalo">
+        
+    </div>
+    <div class="ovalo" id="bellow-ovalo">
+        
+    </div>

@@ -1,0 +1,65 @@
+<div id="regNorDiv">
+    <div class="logo-reg">
+        <img src="html/imgs/logoHub.png" alt="Logo Hub"/>
+    </div>
+    <div class="triangle" id="upside-down-red">
+    
+    </div>
+    <div class="triangle" id="downside-up-red">
+    
+    </div>
+    <div class="triangle" id="up-blue">
+    
+    </div>
+    <div class="triangle" id="huge-tria">
+    
+    </div>
+
+    <div id="regNorForm">
+        <h2 style="font-family: 'Poppins';
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 25px;
+        color: white;text-align: center;">REGISTRATE</h2>
+        <label class="label-in label-in-r">Nombre(s)</label><br>
+        <input class="in-put in-put-r" type="" id="nombre"><br>
+        <label class="label-in label-in-r">Apellidos</label><br>
+        <input class="in-put in-put-r" type="" id="apellidos"><br>
+        <label class="label-in label-in-r">Sexo</label><br>
+        <select class="in-put in-put-r" id="sexo">
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+            <option value="o">Otro</option>
+        </select><br>
+        <label class="label-in label-in-r">Teléfono</label><br>
+        <input class="in-put in-put-r" type="" id="telefono"><br>
+        <label class="label-in label-in-r">Email</label><br>
+        <input class="in-put in-put-r" type="" id="correo"><br><span id="form-error" style="color:red;"></span>
+        <span id="serv-error" style="color:yellow;"></span>
+        <span id="succ-msg" style="color:green;"></span><br>
+        <label class="label-in label-in-r">Contraseña</label><br>
+        <input class="in-put in-put-r" type="password" id="passwd">
+        
+        
+        <button id="sub-but" onclick="register(2)">Registrarme</button>
+    </div>
+    
+        <div id="registrado-div">
+            <p style="float: right;text-align: center;font-family: 'Poppins';
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 20px;
+        color: white;">¿Ya estás registrado?</p>
+        </div>
+        <div id="is-div">
+            <button style="background-color: transparent;
+        border: none;
+        
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 20px;
+        color: white;" onclick="window.location.replace('?')">Inicia sesión</button>
+        </div>
+    
+</div>

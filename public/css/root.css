@@ -1,0 +1,10 @@
+:root{
+	--red-triangle:  rgba(38,7,48,0.8);
+	--blue-triangle:  rgba(6,9,80,0.5);
+	--reg-blue: #030427;
+}
+html,body{
+	margin: 0 ;
+	height: 100%;
+	overflow: hidden;
+}

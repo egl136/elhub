@@ -1,0 +1,38 @@
+.triangle{
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-style: solid;
+	border-width: 200px 0 0 800px;
+	border-color: transparent transparent transparent rgba(100,100,45,0.5);
+}
+#upside-down-red{
+	z-index: 2;
+	top: 45%;
+	left: -25%;
+	transform: rotate(95deg);
+	border-color: transparent transparent transparent var(--red-triangle);
+}
+#downside-up-red{
+	z-index: 2;
+	top: 40%;
+	left: -24%;
+	transform: rotate(-95deg) scaleY(-1.0);
+	border-color: transparent transparent transparent var(--red-triangle);
+}
+#up-blue{
+	z-index: 1;
+	top: 2%;
+	left: 8%;
+	transform: rotate(-2deg) scaleY(-1.0);
+	border-width: 100px 0 0 800px;
+	border-color: transparent transparent transparent var(--blue-triangle);
+		
+}
+#huge-tria{
+	top: 8%;
+	left: -17%;
+	border-width: 250px 0 0 1000px;
+	transform: rotate(-45deg) scaleY(-1.0);
+	border-color: transparent transparent transparent var(--blue-triangle);
+}

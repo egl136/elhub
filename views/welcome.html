@@ -1,0 +1,65 @@
+<style type="text/css">
+	.texto-bienvenida{
+    float: right;
+    color: white;
+    padding: 90px;
+    width: 50%;
+}
+.texto-bienvenida h1{
+    font-family: 'Poppins';
+    font-size: 120px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.texto-bienvenida h2{
+    font-family: 'Poppins';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    padding: 10px 0 50px 0px;
+    float: right;
+}
+
+.logo{
+    float: left;
+    height: 10%;
+    width: 20%;
+}
+.logo img{
+    width: 354px;
+    height: 333px;
+    padding: 30px;
+    margin: 40px;
+    position: absolute;
+    left: 200px;
+}
+
+.boton1 a{
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    clear: both;
+}
+</style>
+<?php
+	if($_SESSION['tipo'] == 1){
+		include 'html/wcEmp.php';
+	}
+	if($_SESSION['tipo'] == 2){
+		include 'html/wcNormal.php';
+	}
+?>

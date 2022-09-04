@@ -1,0 +1,104 @@
+#principal{
+    background-image: url('../imgs/Fondo_Crea_Un_Perfil.jpg');
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(5,6,45,.9);
+}
+
+.contenedor .superior{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+}
+
+.logo-regA{
+    width: 168px;
+    height: 158px;
+    position: absolute;
+    left: 0;
+    top: 0 ;
+}
+
+.texto{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+.decoracion{
+    background-color: #FB0000;
+    border-color: #FB0000;
+    width: 10%;
+}
+
+.contenedor .botones{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+}
+.contenedor .botones a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: rgba(254, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    width: 60%;
+    margin-top: 10%;
+    padding: 15px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.boton1{
+    
+    margin-left: 20%;
+}
+
+.boton2{
+    
+    margin-left: 20%;
+    top: 50%;
+}
+
+.contenedor .contenedor2{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 10%;
+}
+.contenedor .contenedor2 h1{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 20%;
+}
+
+.contenedor .contenedor2 a{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 20%;
+    bottom: 40%;
+    text-decoration: none;
+}
