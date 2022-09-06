@@ -19,7 +19,7 @@
     <div id="blue-square">
         
     </div>
-    <div id="formulario">
+    <form id="formulario" method="POST" action="/login/action">
         <div class="logo">
             <img src="/imgs/logoHub.png" alt="Logo Hub"/>
         </div>
@@ -29,14 +29,14 @@
     color: white;
     font-size: 40px; text-align: center;">INICIA SESIÓN</p>
         <label class="label-in">Email</label>
-        <input class="in-put" type="" id="usuinput"><br><br>
+        <input class="in-put" type="" name="usuinput"><br><br>
         <label class="label-in">Contraseña</label>
-        <input class="in-put" type="password" id="pasinput"><br><br>
+        <input class="in-put" type="password" name="pasinput"><br><br>
         <span id="form-error" style="color:red;"></span><br>
         <span id="serv-error" style="color:yellow;"></span><br>
         <span id="succ-msg" style="color:green;"></span><br>
-        <button id="sub-but" onclick="login();alert('pushado')">Iniciar Sesión</button>
-    </div>
+        <input type="submit" id="sub-but" value="Iniciar Sesión">
+    </form>
     <div id="go-reg-div">
         <p>¿No te has registrado? <button id="go-reg-but" onclick="window.location.replace('/register')">Registrate</button></p>
     </div>
