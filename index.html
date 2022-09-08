@@ -4,9 +4,31 @@
 
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <div id="app">hey</div>
+  <div id="app" v-cloak>
+      <div id="loginForm">
+          <p>{{loginStatusText}}</p><br>
+          <label>First Name</label><br>
+          <input v-model="mail"><br>
+          <label>Last Name</label><br>
+          <input v-model="passwd">
+          <p style="color: #FF1919"></p>
+          <button @click="login">Login</button>
+      </div>
+      <button @click="contentIndex = 1">To 1</button>
+      <div v-if="contentIndex==0">
+          Principal
+      </div>
+      <div v-if="contentIndex==1">
+          Secundario
+      </div>
+  </div>
   <script src="https://unpkg.com/vue@3"></script>
   <script src="app.js"></script>
 </body>
